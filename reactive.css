@@ -13,7 +13,10 @@ div {
   max-width: 100%;
   color: white;
   opacity: 0.7;
-  font-size: 1.5em;
+  font-size: 1em;
+}
+.brand-custom {
+  font-size: 2em;
 }
 .carrousel {
   background-color: yellow;
@@ -68,6 +71,18 @@ div {
   height: 20vh;
   color: white;
   margin-top: 1%;
+  display: flex;
+  justify-content: end;
+}
+.address-info {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  margin-top: 1%;
+}
+.address-info div {
+  margin-top: 1%;
+  margin-right: 0.5%;
 }
 .lst {
   color: white;
