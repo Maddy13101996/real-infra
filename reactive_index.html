@@ -48,7 +48,7 @@
               <a class="nav-link lst" href=".\test.html">Home</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link lst" href="#Upcoming">Coming Up</a>
+              <a class="nav-link lst" href="#upcoming">Coming Up</a>
             </li>
             <li class="nav-item">
               <a class="nav-link lst" href="#services">Services</a>
@@ -63,9 +63,72 @@
         </div>
       </nav>
     </header>
-    <div class="carrousel"></div>
+    <!-- Bootstrap Carousel -->
+    <div
+      id="carouselExample"
+      class="carousel slide fluid navbar-expand-lg navbar-expand-sm"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="pexels-aleksejs-bergmanis-681368.jpg"
+            class="d-block w-100 carousel-image"
+            alt="Image 1"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="pexels-alex-staudinger-1732414.jpg"
+            class="d-block w-100 carousel-image"
+            alt="Image 2"
+          />
+        </div>
+        <div class="carousel-item blog">
+          <img
+            src="pexels-binyamin-mellish-1396122.jpg"
+            class="d-block w-100 carousel-image"
+            alt="Image 3"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="pexels-nextvoyage-1481105.jpg"
+            class="d-block w-100 carousel-image"
+            alt="Image 4"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="pexels-pixabay-280222.jpg"
+            class="d-block w-100 carousel-image"
+            alt="Image 5"
+          />
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExample"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExample"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
     <div class="info">
-      <h1>Up coming projects</h1>
+      <h1 id="upcoming" data-bs-spy="scroll" class="info-headers">
+        Up coming projects
+      </h1>
       <div class="info-details">
         <div class="projectDesc">
           <div><h1>Kompally</h1></div>
@@ -146,8 +209,76 @@
           </div>
         </div>
       </div>
-      <h1>Services</h1>
-      <div class="info-details"></div>
+      <!--Services-->
+      <div class="info">
+        <h1 id="services" data-bs-spy="scroll" class="info-headers">
+          Services
+        </h1>
+        <!-- Contact Information-->
+        <div
+          id="contact"
+          data-bs-spy="scroll"
+          class="lists container text-center"
+        >
+          <div class="row justify-content-md-center">
+            <div class="col-sm-4 sub-header">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Mr Alex</h4>
+                  <h5 class="card-title">Dpy Gen Manager</h5>
+                  <p class="card-text">+91-8999882673</p>
+                  <p class="card-text">test@gmail.com.</p>
+                  <a href="#" class="btn btn-success">Contact Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 sub-header">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Mr Rogan</h4>
+                  <h5 class="card-title">Gen Manager</h5>
+                  <p class="card-text">+91-8999882673</p>
+                  <p class="card-text">test@gmail.com.</p>
+                  <a href="#" class="btn btn-success">Contact Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 sub-header">
+              <div class="card">
+                <div class="card-body card-custom">
+                  <h4 class="card-title">Ms Rachel</h4>
+                  <h5 class="card-title">Sales Manager</h5>
+                  <p class="card-text">+91-8999882673</p>
+                  <p class="card-text">test@gmail.com.</p>
+                  <a href="#" class="btn btn-success">Contact Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--About us -->
+      <h1 id="about" data-bs-spy="scroll" class="info-headers">About us</h1>
+      <div class="info-details">
+        <div class="projectDesc">
+          <div><h1>Kompally</h1></div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Accusantium, eligendi deserunt et maiores qui aliquid molestias
+              quas voluptatibus porro quod voluptates nostrum molestiae
+              perferendis tempore eos ullam commodi repudiandae. Pariatur!
+            </p>
+          </div>
+        </div>
+        <div class="imageContainer">
+          <img
+            src="pexels-aleksejs-bergmanis-681368.jpg"
+            alt=""
+            class="projectImage"
+          />
+        </div>
+      </div>
     </div>
     <div class="footer"></div>
     <!-- Bootstrap CSS -->
@@ -160,5 +291,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS and dependencies (Popper.js and jQuery) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

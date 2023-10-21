@@ -12,6 +12,8 @@ div {
   height: 10vh;
   max-width: 100%;
   color: white;
+  opacity: 0.7;
+  font-size: 1.5em;
 }
 .carrousel {
   background-color: yellow;
@@ -27,6 +29,7 @@ div {
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 3%;
 }
 .info-details {
   background-color: white;
@@ -43,7 +46,10 @@ div {
   margin-top: 0;
   margin-left: 2%;
   margin-right: 2%;
-  font-size: 0.9em;
+  font-size: 1.2em;
+}
+.projectDesc h1 {
+  font-size: 1.5em;
 }
 .imageContainer {
   background-color: white;
@@ -65,4 +71,22 @@ div {
 }
 .lst {
   color: white;
+}
+.carousel-image {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+}
+.carousel-custom {
+  margin-bottom: 2%;
+}
+.info-headers {
+  font-size: 3.5em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 3%;
+}
+.list-details {
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
